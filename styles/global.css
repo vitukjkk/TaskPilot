@@ -1,0 +1,35 @@
+:root {
+    /* ======================== */
+    /* CORES */
+    /* ======================== */
+
+    /* CONTENT */
+    --color-primary: #FFECA1;
+    --color-secondary: #303133;
+    --color-tertiary: #FFFFFF;
+
+    /* ======================== */
+    /* TIPOGRAFIA */
+    /* ======================== */
+    --main-font: 1rem/1.5 'Poppins', sans-serif;
+}
+
+body {
+    font: var(--main-font);
+    background-color: var(--color-primary);
+    text-align: center;
+}
+
+header {
+    
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    padding: .6rem;
+
+    a {
+        color: var(--color-primary);
+    }
+}
