@@ -21,6 +21,7 @@ body {
 }
 
 header {
+    animation: themeChange 0.5s ease-in-out forwards;
     color: var(--color-tertiary);
     background-color: var(--color-secondary);
 
@@ -31,6 +32,9 @@ header {
     }
 }
 
+main {
+}
+
 footer {
     background-color: var(--color-secondary);
     color: var(--color-tertiary);
@@ -38,5 +42,21 @@ footer {
 
     a {
         color: var(--color-primary);
+    }
+}
+
+@keyframes themeChange {
+
+    0% { /* ESCURO */
+        color: var(--color-secondary);
+        background-color: var(--color-tertiary);
+    }
+    100% { /* CLARO */
+        color: var(--color-tertiary);
+        background-color: var(--color-tertiary);
+        
+        .imgMainLogo {
+
+        }
     }
 }
