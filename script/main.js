@@ -4,28 +4,64 @@
 
 // MANAGE
 
-alert('ola mundo')
-
 function defineVariables() {
-    // VARIÁVEIS HEADER
+    // ===============================
+    // HEADER
+    // ===============================
+    const header = document.querySelector('#header')
+    // IMG
     const imgMainLogo = document.querySelector('#imgMainLogo')
     const imgMainUser = document.querySelector('#imgMainUser')
     const imgMainConfig = document.querySelector('#imgMainConfig')
+    const imgMainPages = document.querySelector('#imgMainPages')
+
+    // INPUT 
+    const inputMainSearch = document.querySelector('#inputMainSearch')
+
+    // ===============================
+    // MAIN
+    // ===============================
+    const h1Principios = document.querySelector('#h1Principios')
 }
 
+function setElements() {
+    defineVariables()
+}
 
 function changeTheme() {
-    alert('ola mundo')
     if(window.matchMedia('(prefers-color-scheme: light)').matches) {
         defineVariables()
+        
+        document.body.style.backgroundColor = 'black'
+
+        // HEADER - LIGHT
+        // IMG
         imgMainLogo.style.filter = 'grayscale(100%) brightness(0%)'
         imgMainUser.style.filter = 'grayscale(100%) brightness(0%)'
         imgMainConfig.style.filter = 'grayscale(100%) brightness(0%)'
+        imgMainPages.style.filter = 'grayscale(100%) brightness(0%)'
+
+        // INPUT
+        inputMainSearch.style.backgroundColor = 'black'
+        inputMainSearch.style.color = 'white'
     } else {
         
     }
 }
 
+function changeMainPrincipios() {
+    defineVariables()
+    let counter = 0
+    let principios = ['crie.', 'lembre.', 'inove...']
+
+    setInterval(() => {
+        
+        h1Principios.textContent = principios[counter]
+        counter++
+        if(counter === 3) return counter = 0
+    }, 1500)
+}
+
 export {
-    changeTheme, defineVariables
+    changeTheme, defineVariables, setElements, changeMainPrincipios
 }

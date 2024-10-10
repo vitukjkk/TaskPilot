@@ -15,3 +15,15 @@
     text-align: left;
     padding: 0 2rem;
 }
+
+/* MAIN */
+#h1Principios {
+    font-size: 3rem;
+
+    @media (prefers-color-scheme: dark) {
+        color: red;
+    }
+    @media(prefers-color-scheme: light) {
+        color: var(--color-tertiary);
+    }
+}
