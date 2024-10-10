@@ -19,9 +19,13 @@
 /* MAIN */
 #h1Principios {
     font-size: 3rem;
+    display: inline;
+    padding: .6rem;
+    border-radius: .4rem;
 
     @media (prefers-color-scheme: dark) {
-        color: red;
+        color: var(--color-primary);
+        background-color: var(--color-secondary);
     }
     @media(prefers-color-scheme: light) {
         color: var(--color-tertiary);

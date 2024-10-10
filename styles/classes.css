@@ -1,0 +1,30 @@
+.divFirstSide {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 3rem 0;
+}
+
+.divFirstSideLeft {
+    border-right: 1px solid gray;
+    padding: 2rem;
+    word-wrap: break-word;
+}
+
+.divFirstSideRight {
+    padding: 1rem;
+}
+
+.divSecondSide {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.divSecondSideLeft {
+    padding: 1rem;
+}
+
+.divSecondSideRight {
+    border-left: 1px solid gray;
+    padding: 2rem;
+    word-wrap: break-word;
+}
