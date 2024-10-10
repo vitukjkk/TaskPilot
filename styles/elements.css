@@ -1,0 +1,17 @@
+/* DIVS */
+
+#divHeaderRight {
+    text-align: right;
+    padding: 0 2rem;
+    display: flex-end;
+
+    img {
+        padding: 1rem 0 0 0;
+        box-sizing: border-box;
+    }
+}
+
+#divHeaderLeft {
+    text-align: left;
+    padding: 0 2rem;
+}
