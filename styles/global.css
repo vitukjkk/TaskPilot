@@ -43,6 +43,12 @@ main {
 }
 
 footer {
+    padding: .6rem;
+
+    a {
+        color: var(--color-primary);
+    }
+
     @media(prefers-color-scheme: dark) {
         color: var(--color-tertiary);
         background-color: var(--color-secondary);
@@ -51,11 +57,5 @@ footer {
     @media (prefers-color-scheme: light) {
         color: var(--color-secondary);
         background-color: var(--color-tertiary);
-    }
-
-    padding: .6rem;
-
-    a {
-        color: var(--color-primary);
     }
 }
