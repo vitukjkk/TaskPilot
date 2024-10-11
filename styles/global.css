@@ -19,9 +19,29 @@ body {
     background-color: var(--color-primary);
     text-align: center;
     font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    @media (max-width: 425px) {
+
+        width: 100%;
+
+        #inputMainSearch, #imgMainConfig, #imgMainUser {
+            display: none;
+        }
+
+        #imgMainPages {
+            width: 1rem;
+        }
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        #inputMainSearch {
+            display: none;
+        }
+    }
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -33,6 +53,8 @@ header {
         height: auto;
         max-width: 100%;
     }
+
+    max-width: 100%;
 
     input[type='text'] {
         padding: .4rem;
@@ -61,13 +83,24 @@ main {
     p {
         font-size: 1.5rem;
     }
+
+    max-width: 100%;
 }
 
 footer {
+    max-width: 100%;
     padding: .6rem;
 
     a {
         color: var(--color-primary);
+    }
+
+    @media (max-width: 425px) {
+        font-size: .8rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: .9rem;
     }
 
     @media(prefers-color-scheme: dark) {
