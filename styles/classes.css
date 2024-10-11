@@ -23,6 +23,14 @@
             font-size: .8rem;
         }
     }
+    
+    @media (min-width: 426px) and (max-width: 1024px) {
+        font-size: .9rem;
+        p {
+            font-size: .8rem;
+        }
+    }
+
     @media (min-width: 1025px) {
         border-right: 1px solid gray;
         padding: 2rem;
@@ -30,18 +38,26 @@
 }
 
 .divFirstSideRight {
-    img {
-        border: 1px solid red;
+    @media (max-width: 425px) {
+        img {
+            width: 13rem;
+        }
     }
     padding: 1rem;
 }
 
 .divSecondSide {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     background-color: var(--color-secondary);
     color: var(--color-primary);
     margin: 2rem 0;
+
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+ 
+
+    }
+
     @media (prefers-color-scheme: light) {
         background-color: var(--color-tertiary);
         color: var(--color-secondary);
