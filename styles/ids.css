@@ -1,0 +1,36 @@
+/* DIVS */
+
+#divHeaderRight {
+    text-align: right;
+    padding: 0 2rem;
+    display: flex-end;
+
+    img {
+        padding: 1rem 0 0 0;
+        box-sizing: border-box;
+    }
+}
+
+#divHeaderLeft {
+    text-align: left;
+    padding: 0 2rem;
+}
+
+/* MAIN */
+#h1Principios {
+    font-size: 3rem;
+    display: inline;
+    padding: .6rem;
+    border-radius: .4rem;
+
+    /* ANIMATION */
+    
+    @media (prefers-color-scheme: dark) {
+        color: var(--color-primary);
+        background-color: var(--color-secondary);
+    }
+    @media(prefers-color-scheme: light) {
+        color: var(--color-secon);
+        background-color: var(--color-tertiary);
+    }
+}

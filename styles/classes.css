@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 3rem 0;
+    @media (prefers-color-scheme: light) {
+        color: var(--color-tertiary);
+    }
 }
 
 .divFirstSideLeft {
@@ -17,6 +20,14 @@
 .divSecondSide {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    margin: 2rem 0;
+    @media (prefers-color-scheme: light) {
+        background-color: var(--color-tertiary);
+        color: var(--color-secondary);
+    }
+
 }
 
 .divSecondSideLeft {
@@ -27,4 +38,20 @@
     border-left: 1px solid gray;
     padding: 2rem;
     word-wrap: break-word;
+}
+
+.divThirdSide {
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 3rem 0;
+
+    @media (prefers-color-scheme: light) {
+        color: var(--color-tertiary);
+    }
+}
+
+.divThirdSideLeft {
+    padding: .5rem;
+    border-right: 1px solid gray;
 }
