@@ -4,6 +4,11 @@
         display: block;
     }
 
+    @media (min-width: 1025px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
     @media (prefers-color-scheme: light) {
         color: var(--color-tertiary);
     }
@@ -11,6 +16,8 @@
 
 .divFirstSideLeft {
     word-wrap: break-word;
+    padding: 2rem;
+
     @media (max-width: 425px) {
         p {
             font-size: 1.3rem;
@@ -19,14 +26,11 @@
     
     @media (min-width: 426px) and (max-width: 1024px) {
         font-size: 1.3rem;
-        p {
-            font-size: 1.3rem;
-        }
+
     }
 
     @media (min-width: 1025px) {
         border-right: 1px solid gray;
-        padding: 2rem;
     }    
 }
 
@@ -97,10 +101,15 @@
     @media (min-width: 426px) and (max-width: 1024px) {
         display: block;
     }
+
+    @media (min-width: 1025px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
 .divThirdSideLeft {
-    padding: .5rem;
+    padding: 1.5rem;
     @media (max-width: 425px) {
         p {
             font-size: 1.3rem;
@@ -109,13 +118,9 @@
 
     @media (min-width: 426px) and (max-width: 1024px) {
         font-size: 1.3rem;
-        p {
-            font-size: 1.3rem;
-        }
-
     }
-}
 
-.divThirdSideRight {
-
+    @media (min-width: 1025px) {
+        border-right: 1px solid gray;
+    }
 }
