@@ -1,13 +1,7 @@
 .divFirstSide {
     @media (max-width: 425px) {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         display: block;
-    }
-
-    @media(min-width: 1025px) {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        padding: 3rem 0;
     }
 
     @media (prefers-color-scheme: light) {
@@ -18,16 +12,15 @@
 .divFirstSideLeft {
     word-wrap: break-word;
     @media (max-width: 425px) {
-        font-size: .7rem;
         p {
-            font-size: .8rem;
+            font-size: 1.3rem;
         }
     }
     
     @media (min-width: 426px) and (max-width: 1024px) {
-        font-size: .9rem;
+        font-size: 1.3rem;
         p {
-            font-size: .8rem;
+            font-size: 1.3rem;
         }
     }
 
@@ -70,23 +63,59 @@
 }
 
 .divSecondSideRight {
-    border-left: 1px solid gray;
     padding: 2rem;
     word-wrap: break-word;
+
+    @media (max-width: 425px) {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    
+    @media (min-width: 426px) and (max-width: 1024px) {
+        font-size: 1.3rem;
+        p {
+            font-size: 1.3rem;
+        }
+    }
 }
 
 .divThirdSide {
-    
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    max-width: 100%;
     margin: 3rem 0;
 
     @media (prefers-color-scheme: light) {
         color: var(--color-tertiary);
     }
+
+    @media (max-width: 425px) {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+    
+    @media (min-width: 426px) and (max-width: 1024px) {
+        display: block;
+    }
 }
 
 .divThirdSideLeft {
     padding: .5rem;
-    border-right: 1px solid gray;
+    @media (max-width: 425px) {
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (min-width: 426px) and (max-width: 1024px) {
+        font-size: 1.3rem;
+        p {
+            font-size: 1.3rem;
+        }
+
+    }
+}
+
+.divThirdSideRight {
+
 }
