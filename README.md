@@ -22,6 +22,7 @@ TaskPilot é um website de gerenciamento de tarefas projetado para ajudar você 
 - Zod
 - Prisma
 
+
 ## Contato
 
 Para mais informações, entre em contato pelo e-mail: vitor69776@estudante.ifb.edu.br
