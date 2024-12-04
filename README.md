@@ -18,6 +18,9 @@ TaskPilot é um website de gerenciamento de tarefas projetado para ajudar você 
 - TypeScript / JSX / JavaScript
 - Express
 - Zod
+- Jest
+- Beekeeper
+- Docker
 - Prisma
 
 ## 🤝 - Contribuição 
