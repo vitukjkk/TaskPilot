@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./Header.module.css";
 
@@ -31,7 +32,7 @@ export default function Header() {
             
             <div className={styles.divHeaderPages} style={pagesVisibleController}>
                 <ul>
-                    <li>Home</li>
+                    <li><Link to="/">Home</Link></li>
                     <li>Tarefas</li>
                     <li>Projetos</li>
                     <li>Times</li>

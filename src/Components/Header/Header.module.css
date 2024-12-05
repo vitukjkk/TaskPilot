@@ -26,6 +26,11 @@ header {
     li:hover {
         background-color: var(--cor-terciaria);
     }
+
+    a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+    }
 }
 
 .divHeaderCenter {
