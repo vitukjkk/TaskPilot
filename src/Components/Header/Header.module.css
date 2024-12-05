@@ -1,0 +1,43 @@
+header {
+
+    display: flex;
+    padding: .5rem;
+    
+    @media (max-width: 849px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 850px) {
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    ul {
+
+        margin: 0 auto;
+        width: fit-content;
+        padding: .5rem;
+
+        list-style-type: none;
+        border: 1px solid var(--cor-terciaria);
+        border-radius: .5rem;
+    }
+
+    li:hover {
+        background-color: var(--cor-terciaria);
+    }
+}
+
+.divHeaderCenter {
+    img {
+        width: 75%;
+    }
+}
+
+.imgIcons {
+
+    width: 50px;
+    height: auto;
+
+    filter: invert();
+}

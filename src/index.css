@@ -3,10 +3,9 @@
 * {
     /* CORES */
 
-    --cor-primaria: #e8d072;
-    --cor-secundaria: black;
-    --cor-terciaria: white;
-    --cor-quadriaria: gray;
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: gray;
 
     --fonte-primaria: 1rem/1.5 "Coda", sans-serif;
 
@@ -17,8 +16,8 @@
 
 body {
     font: var(--fonte-primaria);
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 /* ELEMENTS */
