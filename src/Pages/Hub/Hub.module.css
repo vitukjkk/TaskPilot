@@ -1,0 +1,56 @@
+@import url(../../index.css);
+
+.divHub {
+    margin: 1rem;
+  }
+  
+  /* POSTS */
+  
+  .divPostsOne {
+    padding: 0.4rem;
+    margin: 0.5rem auto;
+  
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 0.4rem;
+  
+    width: 80%;
+  
+    @media (min-width: 800px) {
+      width: 50%;
+    }
+  }
+  
+  .divPostsHeader {
+    padding: 0.4rem;
+  }
+  
+  .divPostsMain {
+    padding: 0.2rem;
+    margin: 0.4rem;
+  }
+  
+  .divPostsFooter {
+    padding: 0.4rem;
+    display: flex;
+  
+    @media (max-width: 249px) {
+      flex-direction: column;
+    }
+  
+    @media (min-width: 250px) {
+      justify-content: space-around;
+    }
+  }
+  
+  .divPostsFooterButtons {
+    margin: 0.3rem;
+  }
+  
+  /* MODELS */
+  
+  .divModels {
+    button {
+      margin: 0.4rem;
+    }
+  }
+  

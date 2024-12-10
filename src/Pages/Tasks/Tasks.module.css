@@ -1,0 +1,78 @@
+@import url(../../index.css);
+
+.spanTasksAddTitle {
+  display: block;
+  padding: 0.4rem;
+}
+
+.inputsTasksAdd {
+  margin: 0 auto;
+  display: block;
+  resize: none;
+  width: fit-content;
+}
+
+#buttonTasksAdd {
+  margin: 0.7rem;
+}
+
+.divTasksSprint {
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+}
+
+.divTasksCategory {
+  border: 1px solid red;
+  border-radius: 0.4rem;
+}
+
+.divTasksOne {
+  display: flex;
+  align-items: center;
+
+  margin: 0.4rem;
+  border: 1px solid yellow;
+  border-radius: 0.4rem;
+
+  @media (max-width: 799px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 800px) {
+    justify-content: space-around;
+  }
+}
+
+.divTasksOne:nth-child(3) {
+  border: 1px solid green;
+}
+
+.divTasksOne:nth-child(4) {
+  border: 1px solid purple;
+}
+
+.divTasksOneName {
+  padding: 0.3rem;
+  max-width: 100%;
+}
+
+.divTasksOneDescricao {
+  padding: 0.3rem;
+  max-width: 100%;
+}
+
+.divTasksOnePrazo {
+  padding: 0.3rem;
+  max-width: 100%;
+}
+
+.divTasksOneSituation {
+  padding: 0.3rem;
+  max-width: 100%;
+}
+
+.divTasksOneAction {
+  padding: 0.3rem;
+  max-width: 100%;
+}

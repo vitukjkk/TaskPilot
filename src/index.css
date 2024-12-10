@@ -1,27 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=SUSE:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=SUSE:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
-    /* CORES */
+  /* CORES */
 
-    --cor-primaria: black;
-    --cor-secundaria: white;
-    --cor-terciaria: gray;
+  --cor-primaria: black;
+  --cor-secundaria: white;
+  --cor-terciaria: gray;
 
-    --fonte-primaria: 1rem/1.5 "Ubuntu", sans-serif;
+  --fonte-primaria: 1rem/1.5 "Ubuntu", sans-serif;
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font: var(--fonte-primaria);
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
+  font: var(--fonte-primaria);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+
+  padding: 0.7rem;
+  margin: 0.7rem;
 }
 
 /* ELEMENTS */
 
 a {
-    color: var(--cor-terciaria);
+  color: var(--cor-terciaria);
+}
+
+select {
+  font: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  padding: 0.3rem;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 0.2rem;
+}
+
+button {
+  font: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  padding: 0.3rem;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 0.2rem;
+}
+
+button:hover {
+  font: var(--fonte-primaria);
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  padding: 0.3rem;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 0.2rem;
+}
+
+input {
+  font: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  padding: 0.3rem;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 0.2rem;
+}
+
+textarea {
+  font: var(--fonte-primaria);
+  color: var(--cor-secundaria);
+  background-color: var(--cor-primaria);
+  padding: 0.3rem;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 0.2rem;
+}
+
+hr {
+  margin: 2rem 0;
 }
